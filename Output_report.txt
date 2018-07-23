@@ -1,0 +1,51 @@
+Trades given as input
+==========================
+foo 	 B 	 SGP 	 10025.0
+bar 	 S 	 AED 	 14899.5
+foo 	 B 	 SGP 	 10025.0
+foo 	 S 	 SGP 	 10025.0
+abc 	 B 	 SGP 	 10025.0
+cde 	 S 	 AED 	 18210.5
+edg 	 B 	 SGP 	 15037.5
+skf 	 S 	 SGP 	 20050.0
+
+Settlement dates for given trades
+==================================
+Mon Jan 04 00:00:00 GMT 2016
+Sun Jan 10 00:00:00 GMT 2016
+Mon Jan 04 00:00:00 GMT 2016
+Tue Jan 10 00:00:00 GMT 2017
+Mon Jan 04 00:00:00 GMT 2016
+Sun Jan 10 00:00:00 GMT 2016
+Mon Jan 04 00:00:00 GMT 2016
+Tue Jan 10 00:00:00 GMT 2017
+
+Entity 	 BuySell 	UsdAmount 	 SettlementDate
+=======  ========   =========   ================
+foo 		 B 	 	20050.0 	 Mon Jan 04 00:00:00 GMT 2016
+bar 		 S 	 	14899.5 	 Sun Jan 10 00:00:00 GMT 2016
+foo 		 S 	 	10025.0 	 Tue Jan 10 00:00:00 GMT 2017
+abc 		 B 	 	10025.0 	 Mon Jan 04 00:00:00 GMT 2016
+cde 		 S 	 	18210.5 	 Sun Jan 10 00:00:00 GMT 2016
+edg 		 B 	 	15037.5 	 Mon Jan 04 00:00:00 GMT 2016
+skf 		 S 	 	20050.0 	 Tue Jan 10 00:00:00 GMT 2017
+
+Ranking entity for buy instruction
+===================================
+Ranking in outgoing entity foo ==== 20050.0 with rank 1
+Ranking in outgoing entity edg ==== 15037.5 with rank 2
+Ranking in outgoing entity abc ==== 10025.0 with rank 3
+
+Ranking entity for sell instruction
+===================================
+Ranking in incoming entity skf ==== 20050.0 with rank 1
+Ranking in incoming entity cde ==== 18210.5 with rank 2
+Ranking in incoming entity bar ==== 14899.5 with rank 3
+Ranking in incoming entity foo ==== 10025.0 with rank 4
+
+Amount in USD settled everyday
+===============================
+Amount in USD settled incoming on date Tue Jan 10 00:00:00 GMT 2017 and amount 30075.0
+Amount in USD settled incoming on date Sun Jan 10 00:00:00 GMT 2016 and amount 33110.0
+
+Amount in USD settled outgoing on date Mon Jan 04 00:00:00 GMT 2016 and amount 45112.5
